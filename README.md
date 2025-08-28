@@ -1,7 +1,8 @@
 Floating - Todo
 A beautiful, always-on-top todo application with a modern red-orange theme. Built with Electron for a native desktop experience.
 
-![Floating Todo App Preview](<img width="1165" height="711" alt="Screenshot 2025-08-28 221815" src="https://github.com/user-attachments/assets/16ddedcd-fa11-4bc8-a11f-5eb33cd8c4fc" />)
+![Floating Todo App Preview]<img width="1165" height="711" alt="Screenshot 2025-08-28 221815" src="https://github.com/user-attachments/assets/105ddc57-7b51-4590-9e37-82e0025cbd46" />
+
 
 
 ## Features
