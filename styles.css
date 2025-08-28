@@ -1,0 +1,201 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* App Container */
+body {
+    background: transparent !important;
+    color: #fff;
+    -webkit-app-region: drag;
+    user-select: none;
+    overflow: hidden;
+}
+
+.app-container {
+    width: 100%;
+    height: 100vh;
+    background: rgba(255, 69, 0, 0.85); /* Red-orange color with transparency */
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+/* Title Bar */
+.title-bar {
+    height: 30px;
+    background: rgba(200, 60, 0, 0.9); /* Darker red-orange */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+    -webkit-app-region: drag;
+}
+
+.drag-region {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    height: 100%;
+}
+
+.title {
+    font-size: 12px;
+    color: #fff;
+    font-weight: 500;
+}
+
+.window-controls {
+    display: flex;
+    -webkit-app-region: no-drag;
+}
+
+.window-controls button {
+    background: none;
+    border: none;
+    color: #fff;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.window-controls button:hover {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+#close-btn:hover {
+    background: #ff4444;
+}
+
+/* Todo Container */
+.todo-container {
+    padding: 15px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+}
+
+.todo-input-container {
+    display: flex;
+    margin-bottom: 15px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+#todo-input {
+    flex: 1;
+    background: transparent;
+    border: none;
+    padding: 10px 15px;
+    color: #fff;
+    font-size: 14px;
+    outline: none;
+    -webkit-app-region: no-drag;
+}
+
+#todo-input::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+#add-btn {
+    background: rgba(255, 255, 255, 0.1);
+    border: none;
+    color: #fff;
+    padding: 0 15px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+#add-btn:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+/* Todo Items */
+.todos {
+    flex: 1;
+    overflow-y: auto;
+}
+
+.todo-item {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 8px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+    transition: all 0.2s;
+    -webkit-app-region: no-drag;
+}
+
+.todo-item:hover {
+    background: rgba(255, 255, 255, 0.15);
+}
+
+.todo-item input[type="checkbox"] {
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.todo-text {
+    flex: 1;
+    color: #fff;
+    font-size: 14px;
+    word-break: break-word;
+}
+
+.todo-item.completed .todo-text {
+    text-decoration: line-through;
+    opacity: 0.7;
+}
+
+.delete-btn {
+    background: none;
+    border: none;
+    color: rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+    padding: 5px;
+    margin-left: 5px;
+    transition: color 0.2s;
+}
+
+.delete-btn:hover {
+    color: #fff;
+}
+
+.empty-message {
+    color: rgba(255, 255, 255, 0.7);
+    text-align: center;
+    padding: 20px;
+    font-style: italic;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.1);
+    border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgba(255, 255, 255, 0.3);
+}
