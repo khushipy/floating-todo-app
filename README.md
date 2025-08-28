@@ -1,8 +1,7 @@
-<img width="1165" height="711" alt="Screenshot 2025-08-28 221815" src="https://github.com/user-attachments/assets/a3a8b9aa-0cfe-432e-8803-4575e90ae00a" /># Floating Todo App
-
+Floating - Todo
 A beautiful, always-on-top todo application with a modern red-orange theme. Built with Electron for a native desktop experience.
 
-![Floating Todo App Preview](<img width="1165" height="711" alt="Screenshot 2025-08-28 221815" src="https://github.com/user-attachments/assets/16ddedcd-fa11-4bc8-a11f-5eb33cd8c4fc" />)s
+![Floating Todo App Preview](<img width="1165" height="711" alt="Screenshot 2025-08-28 221815" src="https://github.com/user-attachments/assets/16ddedcd-fa11-4bc8-a11f-5eb33cd8c4fc" />)
 
 
 ## Features
@@ -79,10 +78,5 @@ npx electron-packager . --platform=win32 --arch=x64 --out=dist --overwrite
 
 Contributions are welcome! Please feel free to submit a Pull Request.
 
-## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
----
-
-Made with ❤️ by [Your Name]
+Made with ❤️ by Khushi Pal
